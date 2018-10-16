@@ -18,6 +18,9 @@ git push origin --delete remote_branch_to_delete
 # discard local modifications
 git checkout -- file1 file2
 git checkout -- . 
+
+# avoid repeated merge conflicts
+git config --global rerere.enabled true
 ```
 
 ### Docker
