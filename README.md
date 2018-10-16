@@ -21,6 +21,18 @@ git checkout -- .
 
 # avoid repeated merge conflicts
 git config --global rerere.enabled true
+
+# fix last commit message
+git commit --amend -m "New message"
+
+# add forgotten file to the last commit
+git add forgotten_file 
+git commit --amend
+
+# undo last two commits, keep changes
+git reset HEAD~2
+# undo last two commits, discard changes 
+git reset --hard HEAD~2  
 ```
 
 ### Docker
