@@ -38,3 +38,12 @@ git reset --hard HEAD~2
 ### Docker
 
 ### NPM
+
+### Powershell
+
+```ps
+# remove folder recursively
+Remove-Item -Recurse -Force some_dir
+# alias
+rm -r -fo some_dir
+```
