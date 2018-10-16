@@ -41,7 +41,7 @@ git reset --hard HEAD~2
 
 ### Powershell
 
-```ps
+```powershell
 # remove folder recursively
 Remove-Item -Recurse -Force some_dir
 # alias
