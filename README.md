@@ -56,6 +56,14 @@ docker exec -it ubuntu_bash bash
 # `ps` - list running containers
 # -a list all containers (not only running ones)
 docker ps -a
+
+# `rm` - removes container
+# --force , -f		Force the removal of a running container (uses SIGKILL)
+# --link , -l		Remove the specified link
+# --volumes , -v Remove the volumes associated with the container
+
+# remove all stopped containers
+docker rm $(docker ps -a -q)
 ```
 #### docker-compose
 ```bash
