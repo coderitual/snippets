@@ -44,8 +44,6 @@ git reset --hard origin/branch
 # -i interactive
 # -t pseduo TTY 
 # --rm removes container if exists
-# ubuntu image name
-# bash command
 
 # runs bash on ubuntu:latest image
 docker run --name ubuntu_bash --rm -i -t ubuntu bash
