@@ -36,8 +36,8 @@ git reset --hard HEAD~2
 ```
 
 ### Docker
-#### `docker`
-#### `docker-compose`
+#### docker
+#### docker-compose
 ### NPM
 
 ### Powershell
