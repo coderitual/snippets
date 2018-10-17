@@ -81,7 +81,7 @@ docker stop $(docker ps -a -q)
 docker logs service_name -f
 
 # `attach` - Attach local standard input, output, and error streams to a running container
-# Attach isn't for running an extra thing in a container, it's for attaching to the running process. See docker exec for a new process.
+# Attach isn't for running an extra thing in a container, it's for attaching to the running process.
 docker attach test
 ```
 ##### 
