@@ -80,6 +80,9 @@ docker stop $(docker ps -a -q)
 # --until		Show logs before a timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)
 docker logs service_name -f
 
+# `attach` - Attach local standard input, output, and error streams to a running container
+docker attach test
+
 ```
 #### docker-compose
 ```bash
