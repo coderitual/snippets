@@ -83,6 +83,12 @@ docker logs service_name -f
 # `attach` - Attach local standard input, output, and error streams to a running container
 # Attach isn't for running an extra thing in a container, it's for attaching to the running process.
 docker attach test
+
+# `prune`
+# --all , -a		Remove all unused images not just dangling ones
+# --force , -f		Do not prompt for confirmation
+# --volumes		Prune volumes
+docker system prune -a -f --volumes
 ```
 ##### 
 
