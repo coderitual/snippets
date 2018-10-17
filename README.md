@@ -64,6 +64,10 @@ docker ps -a
 
 # remove all stopped containers
 docker rm $(docker ps -a -q)
+
+# `stop` - stops container
+# stop all the running containers 
+docker stop $(docker ps -a -q)
 ```
 #### docker-compose
 ```bash
