@@ -39,9 +39,29 @@ git reset --hard origin/branch
 
 ### Docker
 #### docker
+```bash
+# `run` - command in a new container
+# -i interactive
+# -t pseduo TTY 
+# --rm removes container if exists
+# ubuntu image name
+# bash command
+
+# runs bash on ubuntu:latest image
+docker run --name ubuntu_bash --rm -i -t ubuntu bash
+# runs bash on debian:latest image
+docker run --name test -it debian
+
+# `exec` - run a command in an existing container
+docker exec -it ubuntu_bash bash
+
+# `ps` - list running containers
+# -a list all containers (not only running ones)
+docker ps -a
+```
 #### docker-compose
 ```bash
-# up - builds, (re)creates, starts, and attaches to containers for a service.
+# `up` - builds, (re)creates, starts, and attaches to containers for a service.
 # -d detached
 # -f config path (it's docker-compose param, not 'up' command)
 # --build build images before starting containers.
