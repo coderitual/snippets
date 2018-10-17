@@ -44,6 +44,7 @@ git reset --hard origin/branch
 # Builds, (re)creates, starts, and attaches to containers for a service.
 # -d detached
 # -f config path
+# --build build images before starting containers.
 docker-compose up -f "docker-compose.yml" -d
 ```
 ### NPM
