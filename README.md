@@ -60,7 +60,7 @@ docker ps -a
 # `rm` - removes container
 # --force , -f		Force the removal of a running container (uses SIGKILL)
 # --link , -l		Remove the specified link
-# --volumes , -v Remove the volumes associated with the container
+# --volumes , -v	Remove the volumes associated with the container
 
 # remove all stopped containers
 docker rm $(docker ps -a -q)
