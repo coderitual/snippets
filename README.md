@@ -65,9 +65,21 @@ docker ps -a
 # remove all stopped containers
 docker rm $(docker ps -a -q)
 
+# remove a container and selectively remove volumes
+docker rm -v hello
+
 # `stop` - stops container
 # stop all the running containers 
 docker stop $(docker ps -a -q)
+
+# `logs` - Fetch the logs of a container
+# --follow , -f		Follow log output
+# --since		Show logs since timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)
+# --tail	all	Number of lines to show from the end of the logs
+# --timestamps , -t		Show timestamps
+# --until		Show logs before a timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)
+docker logs service_name -f
+
 ```
 #### docker-compose
 ```bash
