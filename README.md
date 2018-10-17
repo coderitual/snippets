@@ -82,8 +82,10 @@ docker logs service_name -f
 
 # `attach` - Attach local standard input, output, and error streams to a running container
 docker attach test
-
 ```
+##### `attach vs exec`
+Attach isn't for running an extra thing in a container, it's for attaching to the running process.
+"docker exec" is specifically for running new things in a already started container, be it a shell or some other process
 #### docker-compose
 ```bash
 # `up` - builds, (re)creates, starts, and attaches to containers for a service.
