@@ -40,6 +40,12 @@ git reset --hard origin/branch
 ### Docker
 #### docker
 #### docker-compose
+```bash
+# Builds, (re)creates, starts, and attaches to containers for a service.
+# -d detached
+# -f config path
+docker-compose up -f "docker-compose.yml" -d
+```
 ### NPM
 
 ### Powershell
