@@ -33,6 +33,8 @@ git commit --amend
 git reset HEAD~2
 # undo last two commits, discard changes 
 git reset --hard HEAD~2  
+# reset to the origin and discard changes
+git reset --hard origin/branch
 ```
 
 ### Docker
