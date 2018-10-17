@@ -41,11 +41,11 @@ git reset --hard origin/branch
 #### docker
 #### docker-compose
 ```bash
-# Builds, (re)creates, starts, and attaches to containers for a service.
+# up - builds, (re)creates, starts, and attaches to containers for a service.
 # -d detached
-# -f config path
+# -f config path (it's docker-compose param, not 'up' command)
 # --build build images before starting containers.
-docker-compose up -f "docker-compose.yml" -d
+docker-compose -f ./docker-compose.yml up -d --build
 ```
 ### NPM
 
