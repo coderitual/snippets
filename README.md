@@ -110,6 +110,7 @@ node -r ./.pnp.js
 # --inspect Listen on default address and port (127.0.0.1:9229)
 # --inspect=[host:port] Listen on specified address and port
 # --inspect-brk Break before user code starts
+# (legacy from node 7.7.0) --debug or --debug-brk
 node --inspect
 
 # Spawn child process to run user's script under --inspect flag; and use main process to run CLI debugger.
