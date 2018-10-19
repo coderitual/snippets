@@ -129,5 +129,5 @@ rm -r -fo some_dir
 ```bash
 # This starts a ssh tunnel session where a connection to port 9221 on your local machine will be forwarded 
 # to port 9229 on remote.example.com. You can now attach a debugger such as Chrome DevTools or Visual Studio Code to localhost:9221
- ssh -L 9221:localhost:9229 user@remote.example.com
+ssh -L 9221:localhost:9229 user@remote.example.com
 ```
