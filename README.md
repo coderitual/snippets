@@ -99,7 +99,10 @@ docker system prune -a -f --volumes
 docker-compose -f ./docker-compose.yml up -d --build
 ```
 ### NPM
-
+```bash
+# View registry info
+npm view express
+```
 ### Node
 #### Node CLI
 ```bash
