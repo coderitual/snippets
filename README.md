@@ -9,6 +9,10 @@ git pull --rebase
 # create new branch
 git checkout -b new_branch
 
+# push local branch to remote
+# -u --set-upstream will set up the tracking information during the push.
+git push -u origin <branch>
+
 # remove local branch
 git branch -d branch_to_delete
 
