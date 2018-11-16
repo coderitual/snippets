@@ -1,5 +1,5 @@
 # Hosting services
-### `netlify`
+### netlify
 https://www.netlify.com/
 
 ### surge
