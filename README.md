@@ -69,8 +69,8 @@ docker ps -a
 # --link , -l		Remove the specified link
 # --volumes , -v	Remove the volumes associated with the container
 
-# remove all stopped containers
-docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -q) # remove all stopped containers
+docker rm -f $(docker ps -a -q) # remove all containers (send SIGKILL to the running ones)
 
 # remove a container and selectively remove volumes
 docker rm -v hello
