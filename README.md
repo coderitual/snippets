@@ -106,6 +106,9 @@ docker attach test
 # --force , -f		Do not prompt for confirmation
 # --volumes		Prune volumes
 docker system prune -a -f --volumes
+
+# remove dangling volumes
+docker volume rm $(docker volume ls  -q --filter dangling=true)
 ```
 #### docker-compose
 ```bash
