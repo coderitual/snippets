@@ -1,6 +1,16 @@
 # snippets
 Personal development snippets useful for day to day work
 
+### Bash
+```bash
+# Bash clear command line
+# Clean up the line: You can use Ctrl + U to clear up to the beginning.
+# Clean up the line: Ctrl + A Ctrl + K to wipe the current line in the terminal.
+# Cancel the current command/line: Ctrl + C .
+# Recall the deleted command: Ctrl + Y (then Alt + Y )
+# Go at the beginning of the line: Ctrl + A.
+```
+
 ### GIT
 ```bash
 # update with rebase
