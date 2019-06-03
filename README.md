@@ -28,6 +28,7 @@ git branch -d branch_to_delete
 
 # remove remote branch
 git push origin --delete remote_branch_to_delete
+git push origin --no-verify --delete branch_name
 
 # discard local modifications
 git checkout -- file1 file2
