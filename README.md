@@ -11,6 +11,13 @@ Personal development snippets useful for day to day work
 # Go at the beginning of the line: Ctrl + A.
 ```
 
+Find files with specific text inside
+```bash
+grep -R -H "FlowFixType" ./frontend/src | cut -d ' ' -f 1
+# no duplicates
+grep -R -H "FlowFixType" ./frontend/src | cut -d ' ' -f 1 | sort -u
+```
+
 ### GIT
 ```bash
 # update with rebase
