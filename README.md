@@ -169,6 +169,7 @@ ssh -L 9221:localhost:9229 user@remote.example.com
 ```
 
 ### Electron
+#### CLI helpers
 ```bash
 # Extract asar files
 npx asar extract app.asar destfolder 
