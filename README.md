@@ -167,3 +167,9 @@ rm -r -fo some_dir
 # to port 9229 on remote.example.com. You can now attach a debugger such as Chrome DevTools or Visual Studio Code to localhost:9221
 ssh -L 9221:localhost:9229 user@remote.example.com
 ```
+
+### Electron
+```bash
+# Extract asar files
+npx asar extract app.asar destfolder 
+```
