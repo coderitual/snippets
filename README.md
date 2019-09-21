@@ -61,9 +61,14 @@ git reset --hard HEAD~2
 # reset to the origin and discard changes
 git reset --hard origin/branch
 
-#rebase -> change base(parent) of this branch to another
+# rebase -> change base(parent) of this branch to another
 git rebase origin/develop # rebase on develop
 git rebase -i origin/develop # rebase interactive mode, clean, pickup what you want, super cool
+
+# That removes all local branches that have been deleted from remote (typically GitHub)
+# Add --dry-run to merely see a list first to confirm.
+git remote prune origin
+
 ```
 
 ### Docker
