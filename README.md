@@ -41,7 +41,7 @@ git push origin --no-verify --delete branch_name
 git checkout -- file1 file2
 git checkout -- . 
 
-#Revert a specific file to a specific revision
+# Revert a specific file to a specific revision
 git checkout c5f567 -- file1/to/restore file2/to/restore
 
 # avoid repeated merge conflicts
