@@ -74,6 +74,16 @@ git remote prune origin
 ### Docker
 #### docker
 ```bash
+
+# build
+# docker build -t shykes/myapp:1.0.2 -t shykes/myapp:latest .
+docker build -t frontend-initial .
+
+# run image
+# --detach , -d		Run container in background and print container ID
+# docker run -p 127.0.0.1:80:8080/tcp ubuntu bash - exposes 8080/tcp from container to 127.0.0.1:80 on host
+docker run -d -p 3000:80 frontend-initial
+
 # `run` - command in a new container
 # -i interactive
 # -t pseduo TTY 
