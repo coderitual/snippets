@@ -72,6 +72,20 @@ git remote prune origin
 ```
 
 ### Docker
+
+#### docker quick tour
+```bash
+# create docker file
+touch Dockerfile
+
+# build docker image with specified name:tag from current dir
+docker build -t design-system .
+
+# run docker container exposing port 80 to port 3000 on host
+docker run --rm -d -p 3000:80/tcp frontend-initial
+
+```
+
 #### docker
 ```bash
 
