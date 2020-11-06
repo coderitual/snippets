@@ -166,6 +166,28 @@ docker-compose -f ./docker-compose.yml up -d --build
 # View registry info
 npm view express
 ```
+
+Linking
+```bash
+# 1. inside "module" folder you want to link to
+npm link
+
+# 2. inside package folder you want use linked "module"
+npm link module
+
+# check already linked modules
+npm ls -g --depth=0 --link=true
+```
+
+Unlink
+```bash
+# 1. inside package folder where linked module is used
+npm unlink --no-save module
+
+# 2. inside linked module
+npm unlink
+```
+
 ### Node
 #### Node CLI
 ```bash
