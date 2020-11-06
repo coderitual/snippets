@@ -167,6 +167,16 @@ docker-compose -f ./docker-compose.yml up -d --build
 npm view express
 ```
 
+Link status
+```bash
+# list already linked modules
+npm ls -g --depth=0 --link=true
+
+# list usage of linked modules inside package
+# check already linked modules
+npm ls --link=true
+```
+
 Linking
 ```bash
 # 1. inside "module" folder you want to link to
@@ -175,8 +185,6 @@ npm link
 # 2. inside package folder you want use linked "module"
 npm link module
 
-# check already linked modules
-npm ls -g --depth=0 --link=true
 ```
 
 Unlink
